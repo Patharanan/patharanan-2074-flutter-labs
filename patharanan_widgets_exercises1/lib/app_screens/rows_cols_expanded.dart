@@ -33,7 +33,7 @@ class RowsColsExpanded extends StatelessWidget {
               SizedBox(height: 50.0),
               _buildPhotoCreditRow(),
               SizedBox(height: 50.0),
-              _buildButton()
+              _buildButton(context)
             ],
           ),
         ),
@@ -104,7 +104,7 @@ class RowsColsExpanded extends StatelessWidget {
   }
 
   @override
-  Widget _buildButton() {
+  Widget _buildButton(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
           textStyle: const TextStyle(fontSize: 30),
@@ -112,10 +112,34 @@ class RowsColsExpanded extends StatelessWidget {
           backgroundColor: Color.fromARGB(255, 2, 1, 1),
           side: const BorderSide(
               color: Color.fromARGB(255, 173, 198, 210), width: 2)),
-      onPressed: () {
-        print("Button Pressed");
-      },
+      onPressed: () => _showConfirmationDialog(context),
       child: const Text("Submit"),
+    );
+  }
+
+  void _showConfirmationDialog(BuildContext context) {
+    showDialog<String>(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Confirmation"),
+          content: Text("Submitting information"),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context, "Cancel");
+              },
+              child: const Text("Cancel"),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context, "OK");
+              },
+              child: const Text("OK"),
+            ),
+          ],
+        );
+      },
     );
   }
 }
