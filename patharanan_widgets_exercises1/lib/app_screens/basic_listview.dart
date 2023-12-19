@@ -1,4 +1,4 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class BasicListView extends StatelessWidget {
   const BasicListView({Key? key}) : super(key: key);
@@ -8,18 +8,61 @@ class BasicListView extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(8),
       children: <Widget>[
-        const ListTile(
-          title: Text("Engineering"),
-          leading: Icon(Icons.people_alt),
+        buildListTile(
+          context,
+          "Engineering",
+          "EN",
+          Icons.build,
+          Icons.star,
         ),
-        const ListTile(
-          title: Text("Agriculture"),
-          leading: Icon(Icons.people_outline_outlined),
-          onTap: () => ScaffoldMessenger.of(context)
-              .showSnackBar(const SnackBar(content: Text("data"))),
-        )
+        buildListTile(
+          context,
+          "Agriculture",
+          "AG",
+          Icons.eco,
+          null,
+        ),
+        buildListTile(
+            context, "Architecture", "AR", Icons.apartment_outlined, null),
       ],
     );
   }
+
+  ListTile buildListTile(BuildContext context, String faculty,
+      String shortFaculty, IconData leadingIcon, IconData? trailingIcon) {
+    return ListTile(
+      title: Text(faculty),
+      leading: Icon(leadingIcon),
+      trailing: Icon(trailingIcon),
+      onTap: () {
+        _showDialog(context, faculty, shortFaculty);
+      },
+    );
+  }
+
+  void _showDialog(BuildContext context, String faculty, String shortFaculty) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(faculty),
+          content: Text(shortFaculty),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('Close'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context, "OK");
+              },
+              child: const Text("OK"),
+            ),
+          ],
+        );
+      },
+    );
+  }
 }
- */
