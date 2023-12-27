@@ -8,82 +8,109 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SafeArea(
-          child: Stack(
-            children: [
-              // Background Image
-              Image.network(
-                'https://via.placeholder.com/350x150', // Replace with your actor/actress image URL
-                fit: BoxFit.cover,
-                width: double.infinity,
-                height: double.infinity,
-              ),
-              // Content
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(height: 20), // Space before the first row
-                  Text(
-                    'มนต์แคน แก่นคูน',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(height: 20), // Space between name and contact info
-                  Card(
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    elevation: 4,
-                    color: Colors.white,
-                    child: Padding(
-                      padding: EdgeInsets.all(20),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          _buildContactInfo(
-                              Icons.location_on, 'Actor/Actress Place'),
-                          SizedBox(height: 10),
-                          _buildContactInfo(Icons.phone, 'Actor/Actress Phone'),
-                          SizedBox(height: 10),
-                          _buildContactInfo(Icons.email, 'Actor/Actress Email'),
-                        ],
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                      height: 20), // Space between contact info and ratings
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      _buildStarIcon(Icons.star, Colors.green),
-                      _buildStarIcon(Icons.star, Colors.green),
-                      _buildStarIcon(Icons.star, Colors.green),
-                      _buildStarIcon(Icons.star, Colors.black),
-                      _buildStarIcon(Icons.star, Colors.black),
-                    ],
-                  ),
-                  SizedBox(height: 20), // Space after the last row
-                ],
-              ),
-            ],
-          ),
+        backgroundColor: Color.fromARGB(255, 147, 141, 132),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            SizedBox(height: 50),
+            _buildStack("Monkaen Kaenkoon",
+                "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/asset/MonkaenKaenkoon.jpg"),
+            SizedBox(height: 20),
+            _buildCard(
+                "Monkae's Place",
+                "Yasothon, Thailand,35120",
+                "Telephone",
+                '091-419-2645',
+                "E-mail",
+                "MonkaenKaenkoon@official.com"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                _buildStarIcon(Icons.star, Color.fromARGB(255, 255, 0, 0)),
+                _buildStarIcon(Icons.star, Color.fromARGB(255, 255, 0, 0)),
+                _buildStarIcon(Icons.star, Color.fromARGB(255, 255, 0, 0)),
+                _buildStarIcon(Icons.star, Color.fromARGB(255, 255, 0, 0)),
+                _buildStarIcon(Icons.star, Colors.black),
+              ],
+            ),
+            SizedBox(height: 45),
+          ],
         ),
       ),
     );
   }
 
-  Widget _buildContactInfo(IconData icon, String text) {
-    return Row(
+  Widget _buildStack(String text, String image) {
+    return Stack(
+      alignment: const Alignment(0.4, 0.5),
       children: [
-        Icon(icon, color: Colors.grey),
-        SizedBox(width: 10),
+        CircleAvatar(
+          backgroundImage: AssetImage(image),
+          radius: 170,
+        ),
+        Container(
+          decoration: const BoxDecoration(
+            color: Colors.black45,
+          ),
+          child: Text(
+            text,
+            style: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget _buildContactInfo(IconData icon, String title, String subtitle) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Icon(icon, color: Colors.grey),
+            SizedBox(width: 8),
+            Text(
+              title,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: 4),
         Text(
-          text,
+          subtitle,
           style: TextStyle(fontSize: 16),
         ),
       ],
+    );
+  }
+
+  Widget _buildCard(String title_address, String address, String title_tel,
+      String tel, String title_email, String email) {
+    return Card(
+      margin: EdgeInsets.symmetric(horizontal: 20),
+      elevation: 4,
+      color: Colors.white,
+      child: Padding(
+        padding: EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildContactInfo(Icons.location_on, title_address, address),
+            const Divider(),
+            SizedBox(height: 20),
+            _buildContactInfo(Icons.phone, title_tel, tel),
+            const Divider(),
+            SizedBox(height: 20),
+            _buildContactInfo(Icons.email, title_email, email),
+          ],
+        ),
+      ),
     );
   }
 
@@ -91,7 +118,7 @@ class MyApp extends StatelessWidget {
     return Icon(
       icon,
       color: color,
-      size: 40,
+      size: 25,
     );
   }
 }
