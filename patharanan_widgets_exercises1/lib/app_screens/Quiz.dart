@@ -28,6 +28,9 @@ class QuestionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenW = MediaQuery.of(context).size.width;
+    debugPrint(screenW.toString());
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -35,32 +38,70 @@ class QuestionWidget extends StatelessWidget {
           question.question,
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 50),
-        Image.asset(
-          'asset/KKU-SMART-TRANSIT.JPG',
-          height: 220,
-          width: 300,
-          fit: BoxFit.cover,
-        ),
-        SizedBox(height: 100),
+        screenW <= 600 ? SizedBox(height: 50) : SizedBox(height: 0),
+        screenW <= 600
+            ? Image.asset(
+                'asset/KKU-SMART-TRANSIT.JPG',
+                height: 220,
+                width: 300,
+                fit: BoxFit.cover,
+              )
+            : Image.asset(
+                'asset/KKU-SMART-TRANSIT.JPG',
+                height: 150,
+                width: 250,
+                fit: BoxFit.cover,
+              ),
+        screenW <= 600 ? SizedBox(height: 100) : SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Expanded(
               child: Column(
                 children: [
-                  ChoiceWidget(choice: question.choices[0]),
-                  SizedBox(height: 60),
-                  ChoiceWidget(choice: question.choices[1]),
+                  screenW <= 600
+                      ? ChoiceWidget(
+                          choice: question.choices[0],
+                        )
+                      : ChoiceWidget(
+                          choice: question.choices[0],
+                          boxHeight: 50,
+                          boxWidth: 355,
+                        ),
+                  SizedBox(height: 10),
+                  screenW <= 600
+                      ? ChoiceWidget(
+                          choice: question.choices[1],
+                        )
+                      : ChoiceWidget(
+                          choice: question.choices[1],
+                          boxHeight: 50,
+                          boxWidth: 355),
                 ],
               ),
             ),
             Expanded(
               child: Column(
                 children: [
-                  ChoiceWidget(choice: question.choices[2]),
-                  SizedBox(height: 60),
-                  ChoiceWidget(choice: question.choices[3]),
+                  screenW <= 600
+                      ? ChoiceWidget(
+                          choice: question.choices[2],
+                        )
+                      : ChoiceWidget(
+                          choice: question.choices[2],
+                          boxHeight: 50,
+                          boxWidth: 355,
+                        ),
+                  SizedBox(height: 10),
+                  screenW <= 600
+                      ? ChoiceWidget(
+                          choice: question.choices[3],
+                        )
+                      : ChoiceWidget(
+                          choice: question.choices[3],
+                          boxHeight: 50,
+                          boxWidth: 355,
+                        )
                 ],
               ),
             ),
