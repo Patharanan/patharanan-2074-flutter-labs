@@ -13,18 +13,25 @@ class Choice {
   final String text;
   final Color backgroundColor;
   final Color foregroundColor;
+  final bool correct;
+  bool selected;
 
   Choice({
     required this.text,
     required this.backgroundColor,
     required this.foregroundColor,
+    required this.correct,
+    this.selected = false,
   });
 }
 
 class QuestionWidget extends StatelessWidget {
   final Question question;
 
-  const QuestionWidget({Key? key, required this.question}) : super(key: key);
+  const QuestionWidget({
+    Key? key,
+    required this.question,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +119,7 @@ class QuestionWidget extends StatelessWidget {
   }
 }
 
-class ChoiceWidget extends StatelessWidget {
+class ChoiceWidget extends StatefulWidget {
   final Choice choice;
   final double boxWidth;
   final double boxHeight;
@@ -125,23 +132,47 @@ class ChoiceWidget extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  _ChoiceWidgetState createState() => _ChoiceWidgetState();
+}
+
+class _ChoiceWidgetState extends State<ChoiceWidget> {
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 5),
-      width: boxWidth,
-      height: boxHeight,
-      decoration: BoxDecoration(
-        color: choice.backgroundColor,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      alignment: Alignment.center,
-      child: ListTile(
-        title: Text(
-          choice.text,
-          style: TextStyle(color: choice.foregroundColor, fontSize: 20),
+    Color buttonColor = widget.choice.selected
+        ? (widget.choice.correct ? Colors.green : Colors.red)
+        : widget.choice.backgroundColor;
+
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          widget.choice.selected = true;
+        });
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Your score is ${widget.choice.correct ? 1 : 0}',
+            ),
+          ),
+        );
+      },
+      child: Container(
+        margin: EdgeInsets.symmetric(vertical: 5),
+        width: widget.boxWidth,
+        height: widget.boxHeight,
+        decoration: BoxDecoration(
+          color: buttonColor,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        alignment: Alignment.center,
+        child: Text(
+          widget.choice.text,
+          style: TextStyle(
+            color: widget.choice.foregroundColor,
+            fontSize: 20,
+          ),
           textAlign: TextAlign.center,
         ),
-        onTap: () {},
       ),
     );
   }
