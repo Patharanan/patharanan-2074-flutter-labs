@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(height: 50),
               Row(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   RatingStarWidget(
                     icon: Icons.star,
@@ -103,7 +104,7 @@ class MyApp extends StatelessWidget {
             email: "MonkaenKaenkoon@official.com",
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisSize: MainAxisSize.min,
             children: [
               RatingStarWidget(
                 icon: Icons.star,

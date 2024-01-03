@@ -103,7 +103,7 @@ class MyApp extends StatelessWidget {
             email: "MonkaenKaenkoon@official.com",
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisSize: MainAxisSize.min,
             children: [
               RatingWidget(
                 icon: Icons.star,
