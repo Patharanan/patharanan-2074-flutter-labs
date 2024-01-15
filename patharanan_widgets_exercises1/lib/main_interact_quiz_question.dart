@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           appBar: screenW <= 600
               ? AppBar(
-                  title: Text('Quiz App by 643040207-4'),
+                  title: Text('Question 1'),
                 )
               : null,
           body: Padding(
