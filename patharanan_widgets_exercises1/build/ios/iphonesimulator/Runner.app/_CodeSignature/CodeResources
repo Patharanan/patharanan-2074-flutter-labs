@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Nu11EQf3ekqMYEhVjpc9vbCjyng=
+		fgg6ToHKOPJD4URV51kiidqJmIM=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		1adwKv6IwM1jHvuhxt0hJaBD9XE=
+		1gKfHULmysjGmH7CF7wuLqs2k18=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		pclsWtX4fWmj2GcYTWbrdYrwzWw=
+		cXDLCXjq6YDuQg5HFL8tx078FEw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		GnQJJLjrVN4yMqKyjwytk++ocRU=
+		fhGuxxmdw89/Y4F318gJQ2CkkiA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/asset/KKU-SMART-TRANSIT.JPG</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		Kv3EXoIeUb+pHyr6vbSENgpXPXg=
+		ur7k5WJ8JwyGMXuU22E22xnW6uo=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -216,6 +216,26 @@
 		<data>
 		nMTZkkm9uooDDa8A2YJSyK73oP8=
 		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<data>
+		jED5fB1zDUZR/PAL0/5jXlrVe68=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		8tvlIkvow/z4jucrzBAfAuo/CDY=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<data>
+		kEvmJy8P7vF5OaSCkRhTuHIgTBw=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/Info.plist</key>
+		<data>
+		fWVp+cR0vV6YEDXXyrSdmFHY6VQ=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		6uLTlq7fgHHWA8emYDf4ImHC+AY=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		I1uvhf8R7maolqpTqne0FF6OG8E=
@@ -252,7 +272,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fvC/7dzXXtUvDoBNyA2pR1YrI9lxnymyfaNhOM8uJVs=
+			ulzk89gGzV3In21vLnIuc27lxj9k8W+c8k2uVobh0Bk=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -301,7 +321,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T+dDpdGPNqC7OzUkoCkjfKrJFCVo26r8780jWEY13yc=
+			7qONBs54c5fC8bHfGmeT0SB+Q8KLrJoaUPrNsfYmvME=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -315,7 +335,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			szyvOb8kHoTeJRfDtPKXRFUr/FpN0ulFArpSqkSRpiY=
+			F61TH21LlkxawP47LuQjrNjrzZbf+Izpt08O5x6pyyI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -343,7 +363,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XqGjFY0rDTVXBjPun4IfCW2X99WhiZ682XLUi1Z73LY=
+			fE6K+XUJIbuSffnET2ai8O1qsSUIZf9S4gU/cPaL/Bg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/asset/KKU-SMART-TRANSIT.JPG</key>
@@ -427,7 +447,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oy4KTiUQPqXm6Id6kPMeaatAvSBgXiRZp82Z4qLobqY=
+			Vi+A6ydk77pxLGvvrwcxW1ekK2nAg7fWf6yKY+gZJg0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -596,6 +616,41 @@
 			<key>hash2</key>
 			<data>
 			rETMw/Yb9jC7IPuAQ9hs/kyJldBrRgCEQA20XXBJezA=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AduxckpwN6X89eJYgXrBhaoz+5u9HKWYYb11CPMDYsk=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XDgTAWZEdslIUOc1VxpWgIOpbUlvQtkWwo04M5UmfkM=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4kDM9hX+0fXlv+I3k2UF2Pl4gd4HCw+ZRmM9ILHOQvc=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			stGTfS9LytztNfEQjwH4MnIjlECRR/bpLl1eEMJ1g94=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BWQouTi9VwGKYAGdFcPB7i+nJ/I2h1mLu9k0hIsYCxo=
 			</data>
 		</dict>
 	</dict>
