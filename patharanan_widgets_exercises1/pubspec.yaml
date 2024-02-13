@@ -64,6 +64,7 @@ flutter:
     - asset/KKU-SMART-TRANSIT.JPG
     - asset/MonkaenKaenkoon.JPG
     - asset/med.JPG
+    - asset/quiz.jpg
 
   fonts:
     #- family: Srisakdi
