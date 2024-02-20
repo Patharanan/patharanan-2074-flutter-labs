@@ -146,6 +146,24 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "path_provider",
+      "rootUri": "file:///Users/path/.pub-cache/hosted/pub.dev/path_provider-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/path/.pub-cache/hosted/pub.dev/path_provider_android-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/path/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "path_provider_linux",
       "rootUri": "file:///Users/path/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1",
       "packageUri": "lib/",
@@ -296,7 +314,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-02-13T07:59:21.989134Z",
+  "generated": "2024-02-20T09:00:57.559754Z",
   "generator": "pub",
   "generatorVersion": "3.1.5"
 }
