@@ -1,7 +1,17 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_demo1/database_helper.dart';
+import 'package:http/http.dart' as http;
+import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+final database = FirebaseDatabase.instance;
+final scoresRef = database.reference().child('scores');
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -104,6 +114,7 @@ class _RestartScreenState extends State<RestartScreen> {
     super.initState();
     _getScores();
     _saveScore();
+    _saveScoreToFirebase();
   }
 
   Future<void> _getScores() async {
@@ -116,6 +127,13 @@ class _RestartScreenState extends State<RestartScreen> {
 
   Future<void> _saveScore() async {
     await _databaseHelper.insertScore(widget.score);
+  }
+
+  Future<void> _saveScoreToFirebase() async {
+    scoresRef.push().set({
+      'score': widget.score,
+      'timestamp': DateTime.now().toString(),
+    });
   }
 
   @override
@@ -162,6 +180,8 @@ class _RestartScreenState extends State<RestartScreen> {
             ElevatedButton(
               onPressed: () {
                 Navigator.popUntil(context, ModalRoute.withName('/'));
+                var provider;
+                sendPostRequest(widget.score);
               },
               child: Text('Restart Quiz'),
             ),
@@ -584,4 +604,14 @@ class _ChoiceWidgetState extends State<ChoiceWidget> {
       ),
     );
   }
+}
+
+void sendPostRequest(int totalScore) async {
+  final url = Uri.parse(
+      "https://mobileappdev2024-b041f-default-rtdb.asia-southeast1.firebasedatabase.app/quiz_scores.json");
+  final response = await http.post(
+    url,
+    body: json.encode({"time": DateTime.now().toString(), "score": totalScore}),
+  );
+  debugPrint("response is ${response.statusCode}");
 }
