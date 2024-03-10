@@ -10,11 +10,11 @@
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.bin</key>
 		<data>
-		ORUQt97ySdc/kLm3hGjYe8aEny4=
+		C7UEgBSbyb16m12yLr6nyVJWhcU=
 		</data>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<data>
-		h/x4UNO3NCMh17skiVDbuLb1cxA=
+		yl7a457fs0MCODdJJzw+cTpC1E4=
 		</data>
 		<key>Resources/flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Resources/flutter_assets/NOTICES.Z</key>
 		<data>
-		RIAilnlOaIQ4G5me//hYHoX0dxY=
+		H/c15L/xFfEJPgyaJ+il2zQuboU=
 		</data>
 		<key>Resources/flutter_assets/asset/KKU-SMART-TRANSIT.JPG</key>
 		<data>
@@ -39,6 +39,10 @@
 		<key>Resources/flutter_assets/asset/med.JPG</key>
 		<data>
 		4eS6jN/IEsfEAW++dNvjkSF49yU=
+		</data>
+		<key>Resources/flutter_assets/asset/quiz.jpg</key>
+		<data>
+		CYgPQhV1vvA6tDUr0unDaY5z1LI=
 		</data>
 		<key>Resources/flutter_assets/fonts/Kanit-Bold.ttf</key>
 		<data>
@@ -62,7 +66,7 @@
 		</data>
 		<key>Resources/flutter_assets/kernel_blob.bin</key>
 		<data>
-		n3RF6CT/IocXs8KddNK855AaVe4=
+		oRMEEUWtfhxeQO9YmvViPZIlyJE=
 		</data>
 		<key>Resources/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -90,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wxhr5Ww3UMyA33te7O3e4hXO2UKFYT0myl4oFaNxcEI=
+			xF9RB1gON1yS9uyWjGaRAt6FfdGfnGW3TFaanpSRgIk=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S2cVSrevSh7dB5dxrcRGE2J7ymXEW/n/CEql8RJRnbM=
+			F3bc1BFH9Ynd5AG83A7bZ+BOuOk8dsQJlyvi24V2IDI=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/FontManifest.json</key>
@@ -111,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C4szPdS0AD7JLMyAxOIXKRO6ASL7TphOPzbz+/rCD8o=
+			ZNM/f+x48O6a7IN8HtpoRnaa7iOv4l97zw7GiPxSdBA=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/asset/KKU-SMART-TRANSIT.JPG</key>
@@ -140,6 +144,13 @@
 			<key>hash2</key>
 			<data>
 			itytHkg8Bi6sWzx8cMTipKruHGgYOf5NYI7NjLpmnT4=
+			</data>
+		</dict>
+		<key>Resources/flutter_assets/asset/quiz.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7ku+IgEzMKk/o7XsW0vDQeg7xSrwckQ6xExCN92XRyA=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/fonts/Kanit-Bold.ttf</key>
@@ -181,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pzo24enHpr2MN0RtR4IdaGJdITKHJSodUX4EhyoKmRw=
+			T0Zvq8hb4JawvVMmXYZicqvc505L7jbqFqUnSvKi7Wo=
 			</data>
 		</dict>
 		<key>Resources/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

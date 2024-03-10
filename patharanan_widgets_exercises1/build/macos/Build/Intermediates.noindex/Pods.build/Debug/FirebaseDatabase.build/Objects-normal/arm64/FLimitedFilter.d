@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseDatabase.build/module.modulemap \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FLimitedFilter.m \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FLimitedFilter.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FNodeFilter.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/FQueryParams.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/FChange.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseReference.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataSnapshot.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabase.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDatabaseQuery.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRDataEventType.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRMutableData.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRServerValue.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Public/FirebaseDatabase/FIRTransactionResult.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FIndexedNode.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/FIndex.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/FNamedNode.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FNode.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Api/Private/FTypedefs_Private.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/Utilities/FPath.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FChildChangeAccumulator.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Core/View/Filter/FCompleteChildSource.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/FRangedFilter.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FChildrenNode.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Utilities/FTypedefs.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedDictionary.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/Snapshot/FEmptyNode.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FTreeSortedDictionary.h \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseDatabase/FirebaseDatabase/Sources/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FLLRBNode.h

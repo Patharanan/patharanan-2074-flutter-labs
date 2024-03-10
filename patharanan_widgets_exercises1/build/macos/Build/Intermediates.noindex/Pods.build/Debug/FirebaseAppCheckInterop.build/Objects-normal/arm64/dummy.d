@@ -1,0 +1,4 @@
+dependencies: \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseAppCheckInterop.build/module.modulemap \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/FirebaseAppCheckInterop/FirebaseAppCheck/Interop/dummy.m \
+  /Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/macos/Pods/Target\ Support\ Files/FirebaseAppCheckInterop/FirebaseAppCheckInterop-prefix.pch

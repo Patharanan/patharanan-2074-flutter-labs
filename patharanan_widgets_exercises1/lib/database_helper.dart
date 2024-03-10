@@ -1,4 +1,6 @@
 import 'dart:async';
+
+import 'package:flutter_application_demo1/quiz_ranking_main.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
@@ -22,7 +24,8 @@ class DatabaseHelper {
     final databasesPath = await getApplicationDocumentsDirectory();
     final path = join(databasesPath.path, _databaseName);
     return await openDatabase(path, version: _version, onCreate: (db, version) {
-      return db.execute("CREATE TABLE $_tableName");
+      return db.execute(
+          "CREATE TABLE $_tableName (id INTEGER PRIMARY KEY, score INTEGER)");
     });
   }
 
@@ -39,14 +42,11 @@ class DatabaseHelper {
       limit: 3,
     );
   }
+}
 
-  Future<void> deleteScore(int id) async {
-    final db = await database;
-    await db?.delete(_tableName, where: 'id = ?', whereArgs: [id]);
-  }
-
-  Future<void> deleteAllScores() async {
-    final db = await database;
-    await db?.delete(_tableName);
-  }
+Future<List<Map<String, dynamic>>> _sortedScores() async {
+  DatabaseHelper dbHelper = DatabaseHelper();
+  List<Map<String, dynamic>> sortScores = await dbHelper.getScores();
+  sortScores.sort((a, b) => b['score'].compareTo(a['score']));
+  return sortScores;
 }

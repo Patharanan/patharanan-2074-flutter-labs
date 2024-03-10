@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/path_provider_foundation-master.dia",
+    "emit-module-dependencies" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/path_provider_foundation-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/path_provider_foundation-master-emit-module.dia",
+    "swift-dependencies" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/path_provider_foundation-master.swiftdeps"
+  },
+  "/Users/path/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2/darwin/Classes/messages.g.swift" : {
+    "const-values" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g.swiftconstvalues",
+    "dependencies" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g.d",
+    "diagnostics" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g.o",
+    "llvm-bc" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g.bc",
+    "object" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g.o",
+    "swift-dependencies" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g.swiftdeps",
+    "swiftmodule" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/messages.g~partial.swiftmodule"
+  },
+  "/Users/path/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2/darwin/Classes/PathProviderPlugin.swift" : {
+    "const-values" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin.swiftconstvalues",
+    "dependencies" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin.d",
+    "diagnostics" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin.o",
+    "llvm-bc" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin.bc",
+    "object" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin.o",
+    "swift-dependencies" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin.swiftdeps",
+    "swiftmodule" : "/Users/path/Documents/patharanan-2074-flutter-labs/patharanan_widgets_exercises1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/path_provider_foundation.build/Objects-normal/arm64/PathProviderPlugin~partial.swiftmodule"
+  }
+}
